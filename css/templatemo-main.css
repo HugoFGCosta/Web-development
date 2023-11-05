@@ -172,6 +172,8 @@ nav {
   	width: 20%;
   	font-weight: 300;
   	font-size: 1rem;
+	max-height: 80vh; 
+	overflow-y: auto;
 }
 
 nav em {
@@ -193,20 +195,21 @@ nav .mini-logo {
 }
 
 nav .logo {
-	margin-top: 45px;
+	margin-top: 10px;
 	padding: 0px 20px;
 	color: #fff;
+	text-align: center;
 }
 
 nav .logo img {
 	max-width: 100%;
 	overflow-y: hidden;
+	text-align: center;
 }
 
 nav ul {
-	margin-top: 60px;
-  	text-align: left;
-  	margin-left: 40px;
+	margin-top: 50px;
+  	text-align: center;
   	list-style-type: none;
   	height: 48vh;
   	display: -webkit-box;
@@ -468,7 +471,6 @@ nav a:hover::before {
 
 .third-content {
 	text-align: left;
-	padding: 30px;
 }
 
 .third-content .container-fluid {
@@ -499,7 +501,7 @@ nav a:hover::before {
 }
 
 .third-content h2 {
-	font-size: 24px;
+	font-size: 36px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
@@ -595,15 +597,15 @@ nav a:hover::before {
 }
 
 .fourth-content .item .hover-effect h2 {
-	font-size: 18px;
+	font-size: 36px;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
 	letter-spacing: 0.5px;
-	border-bottom: 1px solid #fff;
+	border-bottom: 2px solid #fff;
 	display: inline-block;
 	padding-bottom: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	margin-top: 0px;
 }
 
@@ -735,31 +737,6 @@ nav a:hover::before {
 		margin-bottom: 30px;
 	}
 
-	.third-content .first-section {
-		border-bottom: 1px solid rgba(250,250,250,0.3);
-		padding-bottom: 45px;
-		margin-bottom: 45px;
-	}
-
-	.third-content .first-section .left-content {
-		margin-right: 0px;
-		margin-bottom: 30px;
-	}
-
-	.third-content .first-section .right-image {
-		margin-left: 0px;
-	}
-
-	.third-content .second-section .right-content {
-		margin-left: 0px;
-		margin-top: 30px;
-	}
-
-
-	.third-content .second-section .left-image {
-		margin-right: 0px;
-	}
-
 	.fifth-content #map {
 		padding: 30px 30px 30px 30px;
 	}
@@ -781,8 +758,9 @@ nav a:hover::before {
 	}
 
 	nav .mini-logo {
-		margin-top: 60px;
+		margin-top: 20px;
 		display: block;
+		color: #fff;
 	}
 
 	nav ul {
@@ -844,18 +822,17 @@ nav a:hover::before {
 	}
 }
 
-  /* Timeline começa */
+  /* Start Timeline  */
  
   .timeline{
-	width:800px;
 	color:#fff;
-	padding:30px 20px;
-	box-shadow:0px 0px 10px rgba(0,0,0,.5);
   }
+  /* control line*/
   .timeline ul{
 	list-style-type:none;
-	border-left:2px solid #094a68;
+	border-left:2px solid #feffff;
 	padding:10px 5px;
+	margin-left: 10px;
   }
   .timeline ul li{
 	padding:20px 20px;
@@ -863,16 +840,17 @@ nav a:hover::before {
 	cursor:pointer;
 	transition:.5s;
   }
+  /* control date*/
   .timeline ul li span{
 	display:inline-block;
-	background-color:#1685b8;
 	border-radius:25px;
 	padding:2px 5px;
 	font-size:15px;
 	text-align:center;
   }
+  /* control content*/
   .timeline ul li .content h3{
-	color:#34ace0;
+	color:#feffff;
 	font-size:17px;
 	padding-top:5px;
   }
@@ -880,40 +858,60 @@ nav a:hover::before {
 	padding:5px 0px 15px 0px;
 	font-size:15px;
   }
+  /* control line balss*/
   .timeline ul li:before{
 	position:absolute;
 	content:'';
 	width:10px;
 	height:10px;
-	background-color:#34ace0;
+	background-color:#feffff;
 	border-radius:50%;
 	left:-11px;
 	top:28px;
 	transition:.5s;
   }
+  /* control color hover*/
   .timeline ul li:hover{
-	background-color:#071f2a;
+	background-color:  rgba(0, 0, 0, 1);
   }
   .timeline ul li:hover:before{
 	background-color:#0F0;
 	box-shadow:0px 0px 10px 2px #0F0;
   }
-  @media (max-width:300px){
-	.timeline{
-	  width:100%;
-	  padding:30px 5px 30px 10px;
-	}
-	.timeline ul li .content h3{
-	  color:#34ace0;
-	  font-size:15px;
-	}
-  
+
+  .texttimeline{
+	color: #fff;
   }
-  /* Timeline acaba */
+  /*End Timeline  */
 
   .headresume{
-	  text-align: center;
-	  font-size: 30px;
-	  color: #fff;
-	  margin-bottom: 30px;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: 0.5px;
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	margin-top: 0px;
   }
+
+  .contact{
+	font-size: 25px;
+	color: #fff;
+
+  }
+  .myfoto{
+	border-radius: 5px 100px 5px 100px;
+	max-width: 100%;
+	overflow: hidden;
+  }
+  .contactpara{
+	font-size: 20px;
+	color: #fff;
+  }
+  .nav-container {
+    max-height: 5px;
+    overflow-y: auto; 
+}
